@@ -52,7 +52,7 @@
 		 	echo "<center><p style='font-family:courier; color:#64991e'>User Validated!</p></center>";
 		 	#echo "<center><img src='images/graycheck.png'></center>";
 		 	echo "<script>logout()</script>";
-		 	header("refresh: 1;	URL=http://localhost/painintheasswebapp/index.php");
+		 	header("refresh: 1;	URL=http://localhost/ecommercewebapplication/index.php");
 		 	//exit;
 		 	#echo "<script type='text/javascript'> chngeImg() </script>";
 		 	#echo "<script>chngeImg2()</script>";
@@ -62,7 +62,7 @@
 			
 		#mysqli_close($conn);
 		else{
-			header("refresh: 1; URL=http://localhost/painintheasswebapp/login.html");
+			header("refresh: 1; URL=http://localhost/ecommercewebapplication/login.html");
 			echo "<center><h4 style='color:red; font-family:courier;'>User Doesn't Exist!</h4></center>";
 		}
 		
