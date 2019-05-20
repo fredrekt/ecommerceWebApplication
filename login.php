@@ -2,8 +2,8 @@
 <html>
 <head>
 	<title>Login</title>
-	<link rel="stylesheet" type="text/css" href="regcss.css">
-	<script type="text/javascript" src="login.js"></script>
+	<link rel="stylesheet" type="text/css" href="styles/regcss.css">
+	<script type="text/javascript" src="script/login.js"></script>
 </head>
 <body>
 	<form>

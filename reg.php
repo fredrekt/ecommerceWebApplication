@@ -1,7 +1,7 @@
 <html>
 <body>
 	<head>
-		<link rel="stylesheet" type="text/css" href="regcss.css">
+		<link rel="stylesheet" type="text/css" href="styles/regcss.css">
 	</head>
 	<form action="register.php" method="post">
 		<center>
