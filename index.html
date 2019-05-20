@@ -36,16 +36,7 @@
       <li><a href="#banner">Products/Service</a></li>
       <li><a href="#aw">About Us</a></li>
       <li><a href="#aw">Contact Us</a></li>
-       <li id='login'><a href="logout.php">Logout</a></li>
-       <li id="login"><a href="login.html"><?php
-session_start();
-if (isset($_SESSION['user'])==true) {
-	echo "User ".$_SESSION['user']." is active";
-}
-else{
-	echo "User Logged In Failed";
-}
-?></a></li>
+       <li id="login"><a href="login.html">Login</a></li>
 	 
     </ul>
   </div>

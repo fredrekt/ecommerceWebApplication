@@ -2,8 +2,8 @@
 <html>
 <head>
   <link rel="icon" type="image/jpg" href="images/fred_logo.jpg">
-<link rel="stylesheet" href="orig.css">
-<script type="text/javascript" src="index.js"></script>
+<link rel="stylesheet" href="styles/orig.css">
+<script type="text/javascript" src="script/index.js"></script>
 </head>
 <body>
 
@@ -33,7 +33,7 @@
       <li><a href="#Products" onclick="showProd()">Products/Service</a></li>
       <li><a href="#about" onclick="showAbout()" >About Us</a></li>
       <li><a href="#contacts" onclick="showContacts()">Contact Us</a></li>
-      <li id="login"><a href="login.html"><?php
+      <li id="login"><a href="index.html"><?php
 session_start();
 if (isset($_SESSION['user'])==true) {
   echo "Logout";

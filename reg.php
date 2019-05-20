@@ -58,11 +58,11 @@ if($conn->query($qry)==TRUE){
 	echo 'alert("Registration Successful!")';
 	echo "</script>";
 	echo "<center><img src='images/greencheck.png' width='40px;'></center>";
-	header("refresh: 2;	URL=http://localhost/revised/login.html");
+	header("refresh: 2;	URL=http://localhost/painintheasswebapp/login.html");
 	echo "<center><h4 style='color:	#64991e;font-family:courier;'>Account Created!</h4></center>";
 	}
 else{
-	header("refresh:1; URL=http://localhost/activityecommerce/registration.html");
+	header("refresh:1; URL=http://localhost/painintheasswebapp/registration.html");
 	echo "<center><h4 style='font-family:courier; color:red' >Failed to Create an Account!</h4></center>";
 }
 ?>
