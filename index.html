@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Favicon hehe -->
+<link rel="icon" type="image/jpg" href="images/fred_logo.jpg">
+<link rel="stylesheet" href="orig.css">
+<script type="text/javascript" src="index.js"></script>
+</head>
+<body>
+
+  <!-- THIS IS PURE CSS!! hehehe
+    Developer: Fred Garingo 
+    To Be Done: Improve main page and use Session for login (global variable)
+      Frameworks: None
+      Languages used: HTML, CSS, Php, Javascript
+      Date made: 4/28/19
+          -->
+
+	<title>Web Application Class</title>
+	<div class="header">
+      <img title="FredRekt Company" src="images/fred_logo.jpg">
+    <div class="header-social">
+      <ul>
+        
+        <li title="Twitter"><a href="http://www.twitter.com"><img src="images/twt.png"></a></li>
+        <li title="Instagram"><a href="http://www.instagram.com"><img src="images/insta.png"></a></li>
+        <li title="Facebook"><a href="http://www.facebook.com"><img src="images/fb.png"></a></li>
+      </ul>
+    </div>
+  </div>
+
+
+	<div class="navbar">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#banner">Products/Service</a></li>
+      <li><a href="#aw">About Us</a></li>
+      <li><a href="#aw">Contact Us</a></li>
+       <li id='login'><a href="logout.php">Logout</a></li>
+       <li id="login"><a href="login.html"><?php
+session_start();
+if (isset($_SESSION['user'])==true) {
+	echo "User ".$_SESSION['user']." is active";
+}
+else{
+	echo "User Logged In Failed";
+}
+?></a></li>
+	 
+    </ul>
+  </div>
+
+  <div class="banner">
+    <center>
+      <img src="images/banner.jpg">    
+    </center>
+  </div>
+
+  <!-- FOR MAIN HEHE -->
+  <center>
+    <h1 style="background-color:#222; padding:20px; margin-top: -2px;"> Counter - Strike Global Offensive Skins</h1>
+  <table>
+    <tr>
+      <td><img src="images/aug.jpg"></td>
+      <td><img src="images/galil.jpg"></td>
+      <td><img src="images/ump.jpg"></td>
+      <td><img src="images/mp7.jpg"></td>
+      <td><img src="images/mp5sd.jpg"></td>
+    </tr>
+    <tr id="skin">
+      <td id="sample">Made by the french</td>
+      <td>Made by the french</td>
+      <td>Made by the french</td>
+      <td>Made by the french</td>
+      <td>Made by the french</td>
+    </tr>
+    <tr>
+      <td>$200</td>
+      <td>$520</td>
+      <td>$120</td>
+      <td>$720</td>
+      <td>$1200</td>
+    </tr>
+     <tr>
+      <td><button class="myButton" onclick="extern()">Add to cart</button></td>
+      <td><button class="myButton" onclick="toast()">Add to cart</button></td>
+      <td><button class="myButton" onclick="toast()">Add to cart</button></td>
+      <td><button class="myButton" onclick="toast()">Add to cart</button></td>
+      <td><button class="myButton" onclick="toast()">Add to cart</button></td>
+    </tr>
+
+    <tr>
+      <td><img src="images/shotgun.jpg"></td>
+      <td><img src="images/awp.jpg"></td>
+      <td><img src="images/nova.jpg"></td>
+      <td><img src="images/bizon.jpg"></td>
+      <td><img src="images/m41.jpg"></td>
+    </tr>
+    <tr id="skin">
+      <td>Made by the french</td>
+      <td>Made by the french</td>
+      <td>Made by the french</td>
+      <td>Made by the french</td>
+      <td>Made by the french</td>
+    </tr>
+    <tr>
+      <td>$920</td>
+      <td>$430</td>
+      <td>$4200</td>
+      <td>$750</td>
+      <td>$2100</td>
+    </tr>
+     <tr>
+      <td><button class="myButton" onclick="toast()">Add to cart</button></td>
+      <td><button class="myButton" onclick="toast()">Add to cart</button></td>
+      <td><button class="myButton" onclick="toast()">Add to cart</button></td>
+      <td><button class="myButton" onclick="toast()">Add to cart</button></td>
+      <td><button class="myButton" onclick="toast()">Add to cart</button></td>
+    </tr>
+    <tr>
+      <td><img src="images/infernocollect.jpg"></td>
+      <td><img src="images/gaygun.jpg"></td>
+      <td><img src="images/famas.jpg"></td>
+      <td><img src="images/awp2.jpg"></td>
+      <td><img src="images/blood.jpg"></td>
+    </tr>
+    <tr id="skin">
+      <td>Made by the french</td>
+      <td>Made by the french</td>
+      <td>Made by the french</td>
+      <td>Made by the french</td>
+      <td>Made by the french</td>
+    </tr>
+    <tr>
+      <td>$9000</td>
+      <td>$520</td>
+      <td>$420</td>
+      <td>$3500</td>
+      <td>$820</td>
+    </tr>
+     <tr>
+      <td><button class="myButton" onclick="toast()">Add to cart</button></td>
+      <td><button class="myButton" onclick="toast()">Add to cart</button></td>
+      <td><button class="myButton" onclick="toast()">Add to cart</button></td>
+      <td><button class="myButton" onclick="toast()">Add to cart</button></td>
+      <td><button class="myButton" onclick="toast()">Add to cart</button></td>
+    </tr>
+    <tr>
+      <td><img src="images/p902.jpg"></td>
+      <td><img src="images/p250.jpg"></td>
+      <td><img src="images/m43.jpg"></td>
+      <td><img src="images/scout.jpg"></td>
+      <td><img src="images/usp.jpg"></td>
+    </tr>
+    <tr id="skin">
+      <td>Made by the french</td>
+      <td>Made by the french</td>
+      <td>Made by the french</td>
+      <td>Made by the french</td>
+      <td>Made by the french</td>
+    </tr>
+    <tr>
+      <td>$500</td>
+      <td>$850</td>
+      <td>$120</td>
+      <td>$350</td>
+      <td>$2100</td>
+    </tr>
+     <tr>
+      <td><button class="myButton" onclick="toast()">Add to cart</button></td>
+      <td><button class="myButton" onclick="toast()">Add to cart</button></td>
+      <td><button class="myButton" onclick="toast()">Add to cart</button></td>
+      <td><button class="myButton" onclick="toast()">Add to cart</button></td>
+      <td><button class="myButton" onclick="toast()">Add to cart</button></td>
+    </tr>
+  </table>
+  <!-- Ending of the Home page of my Ecommerce Website 
+                                                        -->
+	</center>
+
+<!-- For Toast(Android Ref.)    -->
+<script type="text/javascript">
+  function toast(){
+    if(confirm("Are you sure you want to add this to cart?")){
+      alert("Item has been added to cart!")
+    }
+    else {
+      alert("Please continue to Shop! :)")
+    }
+  }
+</script>
+<footer>
+  <center>
+    <form name="registration" action="complaint.php" method="post">
+    <table style="margin-top: 20px; margin-bottom: 20px;">
+       <th><h1 style="background-color:#babfc1;">Submit Complaint!</h1></th>
+    
+      <tr>
+    <td> Name:<input type="text" name="name"></td>
+      </tr>
+      <tr>
+    <td>Email:<input type="text" name="email"></td>
+      </tr>
+    <tr>
+    <td>Contact:<input type="text" name="contact"></td>
+      </tr>
+      <tr>
+    <td>Comment:<br><textarea name="comment" rows="4" cols="40"></textarea></td>
+      </tr>
+      <tr>
+    <td id="aw"> <input class="myButton" type="submit" value="Submit it!" name="submit"></td>
+      </tr>
+      </table>
+    </form>
+    
+  </center>
+</footer>
+<div class="footer2">
+  <ul>
+    <li><a href="#navbar">Home</a></li>
+    <li><a href="#aw">Products/Service</a></li>
+    <li><a href="#aw">About Us</a></li>
+    <li style="float:right;"><a href="delete.php">Reset Data</a></li>
+  </ul>
+</div>
+                            
+</body>
+</html>
+
+
